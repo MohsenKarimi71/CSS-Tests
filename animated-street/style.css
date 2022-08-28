@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#main-container {
+    margin-top:40vh;
+    min-width: 400px;
+    background-color: gray;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.street-lines {
+    margin: 1vh -50vw;
+    text-align: left;
+
+}
+
+.street-lines > span {
+    display: inline-block;
+    height: 1vh;
+    width: 5vw;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    background-color: white;
+    position: relative;
+    animation-name: moving-block;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+.street-lines > span.black {
+    background-color: grey;
+}
+
+@keyframes moving-block {
+    from {left:-50vw;}
+    to {left: 54vw;}
+    
+}
+
+.street-object-container {
+    margin-left: -100vw;
+    margin-right: -100vw;
+}
+
+#car {
+    background-color:blue;
+    height:6vh;
+    width:8vw;
+    display: inline-block;
+    left: 140vw;
+    position: relative;
+    transform: matrix(1, 0, 0.1, 1, 0, 0);
+}
+
+.cars {
+    display: inline-block;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
+
+@keyframes moving-car-1 {
+    from {left:0vw;}
+    to {left: 96.2vw;}
+}
+
+@keyframes moving-car-4 {
+    from {left:0vw;}
+    to {left: 99vw;}
+}
+
+@keyframes moving-car-6 {
+    from {left:0vw;}
+    to {left: 97.5vw;}
+}
+
+
+.car-size-1 {
+    height:3vh;
+    width:5vw;
+}
+.car-size-2 {
+    height:3vh;
+    width:7vw;
+}
+.car-size-3 {
+    height:4vh;
+    width:5vw;
+}
+.car-size-4 {
+    height:4vh;
+    width:7vw;
+}
+.car-size-5 {
+    height:6vh;
+    width:7vw;
+}
+.car-size-6 {
+    height:6vh;
+    width:9vw;
+}
+
+.car-color-1 {background-color:rgb(231, 89, 89);}
+.car-color-2 {background-color:rgb(66, 209, 219);}
+.car-color-3 {background-color:rgb(34, 31, 31);}
+.car-color-4 {background-color:rgb(243, 236, 236);}
+.car-color-5 {background-color:rgb(123, 184, 118);}
+.car-color-6 {background-color:rgb(224, 43, 134);}
+.car-color-7 {background-color:rgb(75, 53, 196);}
+.car-color-8 {background-color:rgb(215, 236, 20);}
+
+.car-speed-1 {
+    animation-name: moving-car-1;
+    animation-duration: 5s;
+    transform: matrix(1, 0, 0.5, 1, 0, 0);
+    margin-left: 9.5vw;
+}
+.car-speed-2 {
+    animation-duration: 7s;
+    transform: matrix(1, 0, 0.35, 1, 0, 0);
+}
+.car-speed-3 {
+    animation-duration: 9s;
+    transform: matrix(1, 0, 0.3, 1, 0, 0);
+}
+.car-speed-4 {
+    animation-name: moving-car-4;
+    animation-duration: 11s;
+    transform: matrix(1, 0, 0.25, 1, 0, 0);
+    margin-left: 13vw;
+}
+.car-speed-5 {
+    animation-duration: 13s;
+    transform: matrix(1, 0, 0.15, 1, 0, 0);
+}
+.car-speed-6 {
+    animation-name: moving-car-6;
+    animation-duration: 15s;
+    transform: matrix(1, 0, 0.1, 1, 0, 0);
+    margin-left: 7vw;
+}
+
+.car-delay-1 {animation-delay: 0.3s;}
+.car-delay-2 {animation-delay: 0.7s;}
+.car-delay-3 {animation-delay: 0.1s;}
+.car-delay-4 {animation-delay: 0.14s;}
+.car-delay-4 {animation-delay: 0.17s;}
+
+
+
